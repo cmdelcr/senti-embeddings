@@ -73,9 +73,10 @@ def init(datasets):
 				pred = np.where(pred > 0.5, 1, 0)
 				y_test_ = y_test
 			else:
-				model.load_weights(checkpoint_filepath)
+				if dataset == 'semeval':
+					# The model weights (that are considered the best) are loaded into the model
+					model.load_weights(checkpoint_filepath)
 				pred = model.predict(x_test, verbose=1)
-				# The model weights (that are considered the best) are loaded into the model
 				y_test_ = [np.argmax(y, axis=0) for y in y_test]
 				pred = [np.argmax(y, axis=0) for y in pred]
 
@@ -97,10 +98,10 @@ def init(datasets):
 			arr_f1_macro.append(f1_macro)
 			arr_f1_micro.append(f1_micro)
 			
-			if dataset == 'sst2':
+			'''if dataset == 'sst2':
 				save_confusion_matrix_binary(y_test_, pred, run)
 			else:
-				save_confusion_matrix_multilabel(y_test_, pred, run)
+				save_confusion_matrix_multilabel(y_test_, pred, run)'''
 			save_specific_results(acc, precision, recall, f1_macro, f1_micro, run, dataset)
 			
 		save_results(arr_acc, arr_precision, arr_recall, arr_f1_macro, arr_f1_micro, dataset)
