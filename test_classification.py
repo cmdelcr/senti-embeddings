@@ -109,10 +109,17 @@ def init(datasets):
 
 
 
+# uncomment lines 119-121 to test with embeddings of the state-of-the-art
+# you need to download the necessary pre-trained embeddings first
+# embeddings/sources.txt contain the URLs where the pre-trained embeddings can be downloaded
 if __name__ == "__main__":
-	arr_dir = [settings.dir_embeddings_glove, settings.dir_ewe, settings.dir_sawe, settings.dir_sota, \
-			settings.dir_senti_embeddings]
-	arr_name = ['glove', 'ewe_uni', 'sawe-100', 'sota', 'senti_embeddings']
+	arr_dir = [settings.dir_senti_embeddings]
+	arr_name = ['senti_embeddings']
+
+	#arr_dir = [settings.dir_embeddings_glove, settings.dir_ewe, settings.dir_sawe, settings.dir_sota, \
+	#		settings.dir_senti_embeddings]
+	#arr_name = ['glove', 'ewe_uni', 'sawe-100', 'sota', 'senti_embeddings']
+
 	for val in range(len(arr_dir)):
 		settings.emb_type = arr_name[val]
 		settings.path = arr_dir[val]
