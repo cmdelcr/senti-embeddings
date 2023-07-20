@@ -2,9 +2,17 @@
 
 This work proposed using a Multi-Output Neural Network to learn emotional embeddings using a combination of lexicons and PCA.
 
+The embeddings are in the URL [senti_embeddings](https://drive.google.com/file/d/1JytZhSzlqHVBRnd5T0S3ViFKANE7PINa/view?usp=sharing)
+Once downloaded ande decompress, plase the file in results/embeddings to test.
+
+
+
 ## Generate emotional embeddings
 The file run.sh should be excecuted to generate the embeddings. This file call the generate_embeddings.py file, it is necessary to only call this file using run.sh since during the execution intermediate files are created necessary for the correct embeddings generation.
-The file generate_embeddings.py was used to generate the embeddings. It contains three basic functions: train_multi_output_model, to to train the Multi-Output Neural Network; get_seti_embeddings, to get the value of the senti-embeddings of all words in the pre-trained embeddings; and reduce_senti_emb_pca to reduce the dimension of the embeddings using PCA. The generated embeddings are saved in results/embeddings folder with the name senti_embeddings.txt
+The file generate_embeddings.py was used to generate the embeddings. It contains three basic functions: 
+- train_multi_output_model: to to train the Multi-Output Neural Network. The trained model is saved in results/embeddings.
+- get_seti_embeddings: to get the value of the senti-embeddings of all words in the pre-trained embeddings and concatenate the result with the pre-trained embeddings, the resulting embeddings are saved in the temporary file senti_embeddings_tmp.txt
+- reduce_senti_emb_pca: to reduce the dimension of the embeddings using IncrementalPCA. The generated embeddings are saved in results/embeddings folder with the name senti_embeddings.txt. The file senti_embeddings_tmp.txt is deleted.
 
 
 ## Test embeddings
