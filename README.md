@@ -1,8 +1,20 @@
 # Refinement of Word Embeddings with Sentiment Content Using Multi-output Neural Networks
 
-This work used a Multi-Output Neural Network to learn emotional embeddings utilizing a combination of lexicons and PCA.
+This is the Tensorflow 2 implementation of the paper "Refinement of word embeddings with sentiment content using multi-output neural networks". 
 
-The embeddings are in the URL [senti_embeddings](https://drive.google.com/file/d/1zUO7Hcd1eozNkRUDCaRQBnMhj7T9W8J2/view?usp=sharing)
+If you use any source codes or datasets included in this toolkit in your work, please cite the following paper. The bibtex is listed below:
+
+<pre>
+@article{mcr:2024,
+  title={Refinement of Word Embeddings with Sentiment Content Using Multi-output Neural Networks’},
+  author={Martín-del-Campo-Rodríguez, C., Batyrshin, Ildar, and Sidorov, Grigori},
+  journal={Journal of Intelligent & Fuzzy Systems},
+  doi={10.3233/JIFS-219354}
+  year={2024}
+}
+</pre>
+
+The proposed embeddings are available in the URL [senti_embeddings](https://drive.google.com/file/d/1zUO7Hcd1eozNkRUDCaRQBnMhj7T9W8J2/view?usp=sharing)
 Once downloaded and decompressed, place the file in results/embeddings to test.
 
 
