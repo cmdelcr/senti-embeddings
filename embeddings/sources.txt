@@ -1,0 +1,16 @@
+ewe_uni.txt
+----------------------------
+https://www.dropbox.com/s/5egqnbktbfxp2im/ewe_uni.txt.zip?dl=0
+
+
+-------------------------------------------------------------------------------------
+glove.42B.300d.txt
+----------------------------
+Common Crawl (42B tokens, 1.9M vocab, uncased, 300d vectors, 1.75 GB download)
+https://nlp.stanford.edu/projects/glove/
+
+
+-------------------------------------------------------------------------------------
+sawe-tanh-pca-100-glove.txt
+----------------------------
+https://github.com/nbehzad/SAWE/tree/master/embeddings
