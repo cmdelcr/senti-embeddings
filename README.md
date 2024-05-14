@@ -7,7 +7,7 @@ If you use any source codes or datasets included in this toolkit in your work, p
 <pre>
 @article{mcr:2024,
   title={Refinement of Word Embeddings with Sentiment Content Using Multi-output Neural Networks’},
-  author={Martín-del-Campo-Rodríguez, C., Batyrshin, Ildar, and Sidorov, Grigori},
+  author={Mart\'in-del-Campo-Rodr\'iguez, C., Batyrshin, Ildar, and Sidorov, Grigori},
   journal={Journal of Intelligent & Fuzzy Systems},
   doi={10.3233/JIFS-219354}
   year={2024}
