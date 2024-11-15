@@ -38,7 +38,7 @@ name_final_senti_emb = 'senti_embeddings'
 # Specifications classification
 num_of_runs = 10
 emb_type = 'glove'
-path = dir_embeddings_glove #'/home/carolina/embeddings/multi_output/comb_orig/senti_embeddings_2.txt'#dir_senti_embeddings
+path = dir_embeddings_glove 
 embedding_dim = 300
 
 lstm_dim_semeval_isear = 150
